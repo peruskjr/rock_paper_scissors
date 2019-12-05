@@ -1,0 +1,199 @@
+/* reset */
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+/* body */
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background: #000;
+    color: #fff;
+    line-height: normal;
+}
+/* container */
+
+.container {
+    min-width: 1100px;
+    min-height: auto;
+    margin: auto;
+    text-align: center;
+}
+/* header */
+
+header {
+    margin: 1rem 0;
+}
+
+h1 {
+    color: #dd0747;
+    margin: 2rem 0 1rem 0;
+    font-size: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.paper {
+    color:#3ee415;
+}
+
+.scissors {
+    color: #0799dd;
+}
+/* redo game icon */
+/*.fa-redo {
+    cursor: pointer;
+    float: right;
+    font-size: 1.3rem;
+    margin: -1rem 0 0 -8rem;
+}
+
+#redo-icon {
+    padding: 2rem 18rem;
+}
+
+i.fa-redo:hover{
+    color: #dd0747
+}
+
+/* home button */
+
+.fa-home {
+    cursor: pointer;
+    color: #fff;
+    font-size: 2rem;
+    margin: 2rem 0 0 0;
+}
+
+i.fa-home:hover {
+    color: #dd0747;
+}
+/* game section */
+
+.game-content p {
+     font-size: 1.5rem;
+     color: #d4d4d4;
+     margin: 3rem 0 1.9rem 0;
+     font-family: 'Courier New', Courier, monospace;
+ }
+ 
+ .choices {
+     display: block;
+     text-align: center;
+     cursor: pointer;
+     font-size: 6rem;
+ }
+ 
+ .choices i {
+     margin: 6rem 0 10rem 0;
+     padding: 0 1rem;
+     cursor: pointer;
+ }
+ 
+ .fa-hand-rock:hover {
+     color: #dd0747;
+ }
+ 
+ .fa-hand-paper:hover {
+     color: #4bdd07;
+ }
+ 
+ .fa-hand-scissors:hover {
+     color: #0799dd;
+ }
+ /* player score info */
+ 
+ .players-score {
+     display: inline;
+     font-size: 2rem;
+ }
+ /* players select */
+ 
+ #players i {
+     padding: 1rem;
+     margin-top: -3rem;
+ }
+ 
+ .fa-user {
+     float: left;
+     margin: 0 0 4rem 14rem;
+     color: #3ee415;
+ }
+ 
+ .fa-keyboard {
+     float: right;
+     margin-right: 14rem;
+     color: #0f82cf;
+ }
+ 
+ #players span {
+     font-size: 12px;
+     font-family: Arial, Helvetica, sans-serif;
+     color: #fff;
+ }
+ /* score */
+ 
+ #score {
+     display: inline;
+ }
+ 
+ #user {
+     float: left;
+     margin: -2rem 0 0 3rem;
+     font-size: 2.5rem;
+     border-bottom: 3px solid #dd0747;
+ }
+ 
+ #computer {
+     float: right;
+     margin: -2rem 3rem 0 0;
+     font-size: 2.5rem;
+     border-bottom: 3px solid #dd0747;
+ }
+ /* results */
+ 
+ .results>p {
+     font-family: Arial, Helvetica, sans-serif;
+     text-align: center;
+     font-size: 1.5rem;
+     color: #fff;
+     letter-spacing: 2px;
+     margin: -6rem 0 0 0;
+ }
+ /* homepage style */
+ /* game instructions */
+ 
+ .instructions ul {
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: 20px;
+     list-style-type: none;
+     margin-top: 3em;
+     margin-bottom: 1em;
+     line-height: 1.5;
+     padding-left: 100px;
+ }
+ 
+ .game-research a {
+     color: #00ffff;
+ }
+ /* play button */
+ 
+ #button {
+     width: 6em;
+     background: #fff;
+     border-radius: 5px;
+     margin: 2rem 0 0 35rem;
+     font-family: Arial, Helvetica, sans-serif;
+ }
+ 
+ a {
+     color: #000;
+     width: 100;
+     line-height: 2em;
+     text-decoration: none;
+ }
+ 
+ a:hover {
+     color: #dd0747;
+ }
