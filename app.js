@@ -33,17 +33,25 @@ lose = (userSelection, computerSelection) => {
     userScore_span.innerHTML = userScore;
     computerScore_span.innerHTML = computerScore;
     //show result message
-    results_p.innerHTML = '${userSlection} loses to ${computerSelection}. You lost! 🙃';
+    results_p.innerHTML = '${userSelection} loses to ${computerSelection}. You lost! 🙃';
 }
 
-draw = (userSelection) => {
+draw = (userSelection, computerSelection) => {
+    //userScore++;
+    //userScore_span.innerHTML = userScore;
+    //computerScore_span.innerHTML = computerScore;
+    //show result message
+    results_p.innerHTML = '${userSelection}   equals   ${computerSelection}. Its a draw! 🙄 🤖';
+}
+
+game = (userSelection) => {
     const computerSelection = computerPlay();
     //compare win, lose, draw
     switch(userSelection + computerSelection) {
         case "rockscissors":
         case "paperrock":
         case "scissorspaper":
-            win(userselection, computerSelection);
+            win(userSelection, computerSelection);
             break;
         case "rockpaper":
         case "paperscissors":
@@ -61,9 +69,9 @@ draw = (userSelection) => {
 //game play function
 main = () => {
     //add event listener to choices
-    rock_i.addEventListener('click', () => Gamepad("rock")); //function
-    paper_i.addEventListener('click', () => Gamepad("paper")); //function
-    scissors_i.addEventListener('click', () => Gamepad("scissors")); //function
+    rock_i.addEventListener('click', () => game("rock")); //function
+    paper_i.addEventListener('click', () => game("paper")); //function
+    scissors_i.addEventListener('click', () => game("scissors")); //function
 }
 
 main();
